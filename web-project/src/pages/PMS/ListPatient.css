@@ -1,0 +1,164 @@
+/* Add these styles to make columns resizable */
+.table th {
+    position: relative;
+    white-space: nowrap;
+    text-align: center;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+.table th.resizing {
+    background-color: #f1f1f1;
+}
+
+.table td {
+    text-overflow: ellipsis;
+}
+
+
+.search-container {
+    margin-bottom: 7.5px;
+    float: right;
+    margin-right: 10px;
+}
+
+.search-container button {
+    margin-left: 10px;
+}
+
+.error-message {
+    color: red;
+    margin: 10px 0;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    padding: 5px; /* Add some padding for better spacing */
+    background-color: #e0e0e0;
+    float: right;
+}
+
+.filter-item:hover{
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+#filter-button {
+    /* margin-left: 63.76%; */
+    float:right;
+}
+
+#filter-labels {
+    margin-left: 10px;
+}
+
+.table-container {
+    position: relative;
+    max-height: 495px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    overflow-anchor:auto;
+    border: 1px solid #ddd; /* Optional: Add a border around the table */
+    padding: 5px; /* Optional: Add some padding */
+    /* position: relative; */
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table-container th.fixed-right,
+.table-container td.fixed-right {
+    position: sticky;
+    right: -10px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.table-container td.fixed-right::before,
+.table-container th.fixed-right::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ddd; /* Match the border color */
+    z-index: 2; /* Ensure it appears above the cell content */
+}
+
+.table-container th.fixed-right {
+    z-index: 2;
+}
+
+.table-container thead th {
+    position: sticky;
+    top: -10px;
+    background-color: #f9f9f9;
+    z-index: 1;
+}
+
+.filter-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative; /* Allow absolute positioning for child elements */
+}
+
+.filter-buttons-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px; /* Space between the buttons */
+}
+
+.select-all-button,
+.unselect-all-button {
+    height: fit-content;
+    /* padding: 8px 12px; */
+    width: fit-content;
+}
+
+/* Light Theme Styles */
+.light-theme .filter-container {
+    background-color: #f9f9f9; /* Light background */
+    color: #000; /* Dark text */
+}
+
+.light-theme .filter-item {
+    background-color: #e0e0e0; /* Light filter item background */
+}
+
+.light-theme .filter-item:hover {
+    background-color: #d0d0d0; /* Lighter hover effect */
+}
+
+/* Dark Theme Styles */
+.dark-theme .filter-container {
+    background-color: #333; /* Dark background */
+    color: #fff; /* Light text */
+}
+
+.dark-theme .filter-item {
+    background-color: #444; /* Dark filter item background */
+}
+
+.dark-theme .filter-item:hover {
+    background-color: #555; /* Darker hover effect */
+}

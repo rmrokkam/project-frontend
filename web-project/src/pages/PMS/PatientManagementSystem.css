@@ -1,0 +1,18 @@
+body, html { 
+    overflow: hidden;
+  }
+  
+  .footer {
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    right: inherit;
+    padding-top: 15px;
+  }
+  
+  .header {
+    margin-left: 20px;
+    font-size: 28px !important;
+  }

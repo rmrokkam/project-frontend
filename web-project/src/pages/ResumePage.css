@@ -1,0 +1,10 @@
+.resume-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.resume-iframe {
+  width: 100%;
+  height: 800px; /* Adjust the height as needed */
+  border: none;
+}

@@ -1,0 +1,447 @@
+.housing-body{
+    /* background: #f4f4f4; */
+    /* color: #dd9797; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.housing-upper-container{
+    width: 85%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.housing-container{
+    width: 75%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.housing-message{
+    padding-bottom: 10px;
+}
+
+.housing-button{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border: none;
+}
+
+.housing-button:hover{
+    background: #484848;
+    /* border: 2px solid #fff; */
+}
+
+#main-header{
+    background-color: rgb(112, 224, 179);
+    color: #fff;
+    padding: 10px 0;
+    /* border-bottom: 5px solid rgb(151, 209, 233); */
+}
+
+#navbar{
+    background-color: #333;
+    color: #fff;
+}
+
+#navbar ul{
+    padding-top: 15px;
+    list-style:none;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+#navbar a.active-link {
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#showcase{
+    background-repeat: no-repeat;
+    background-image: url(../images/houses.png);
+    background-size:cover;
+    background-position: center;
+    min-height: 200px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase h1{
+    color: #fff;
+    /* padding: 25px; */
+    font-size: 75px;
+    line-height: 1.6em;
+    background-color: #333333b0;
+    margin-top: 40px;
+}
+
+.housing-main-full{
+    float: left;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background: #e0e0e095;
+    padding-bottom: 20px;
+    line-height: 2em;
+}
+
+.housing-main-full h1{
+    text-align: left; /* Aligns the text to the left */
+    padding-left:0%;
+    font-size: xx-large;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.housing-main-full h2{
+    text-align: left; /* Aligns the text to the left */
+    padding-left:2%;
+    font-size: xx-large;
+    color: #484848;
+    margin-bottom: 20px;
+}
+
+.housing-main-full p{
+    /* margin-top: 5px; */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: left; /* Aligns the text to the left */
+    padding-left:4%;
+    text-indent: 35px;
+}
+
+.housing-works-cited{
+    float: left;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background: #e0e0e095;
+    padding-bottom: 20px;
+    line-height: 2em;
+}
+.housing-works-cited p{
+    /* margin-top: 5px; */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: left; /* Aligns the text to the left */
+    padding-left: 35px;
+    text-indent: -35px;
+}
+
+.housing-main-block{
+    float: left;
+    width: 65%;
+    padding: 10 30px;
+    box-sizing: border-box;
+    background: #e0e0e095;
+    padding-right: 4%;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+#para-bullet{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: left; /* Aligns the text to the left */
+    padding-left:0px;
+    text-indent: 0px;
+}
+
+.housing-sidebar{
+    float: right;
+    width: 35%;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.housing-sidebar p{
+    padding-left: 10px;
+}
+
+/*hide the inputs/checkmarks and submenu*/
+input[type="checkbox"]#check-usa, input[type="checkbox"]#check-finland, input[type="checkbox"]#check-india, ul#submenu-usa, ul#submenu-finland, ul#submenu-india{
+  display: none;
+}
+
+/*position the label*/
+.housing-main-dropdown label{
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+/*show the submenu when input is checked*/
+#check-usa:checked~ul#submenu-usa {
+    display: block;
+}
+
+#check-finland:checked~ul#submenu-finland {
+    display: block;
+}
+
+#check-india:checked~ul#submenu-india {
+    display: block;
+}
+#check-india:active{
+    color: #ffffff;
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    border-radius: 0%;
+}
+
+#button-usa{
+    background-repeat: no-repeat;
+    background-image: url(../images/usa.jpeg);
+    background-size: cover;
+    font-size: 150px;
+    font-weight: bold;
+    color: #2c2c2c;
+    padding: 5px;
+    margin: 0px;
+    background-position-y: -150px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+/* Hover state - always applicable */
+#button-usa:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    color: #ffffff;
+    font-size: 150px;
+    /* border-radius: 0%; */
+}
+
+/* Active state */
+#button-usa.active-button {
+    color: #ffffff;
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    border-radius: 0%;
+    font-size: 200px;
+    /* Other active state styles */
+}
+
+/* Ensuring hover effect is re-applied correctly */
+#button-usa.active-button:hover {
+    color: #ffffff;
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    font-size: 200px;
+    /* Hover styles that should apply when active */
+}
+
+#submenu-usa{
+    /* text-wrap: balance; */
+    line-height: 2em;
+    background-color: #e0e0e095;
+    color: #000000;
+    margin-top: -18px;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left:0%; /* Adjust this value as needed */
+    text-align:center;
+}
+
+#button-finland{
+    background-repeat: no-repeat;
+    background-image: url(../images/finland.png);
+    background-size: cover;
+    font-size: 150px;
+    font-weight: bold;
+    color: #2c2c2c;
+    padding: 5px;
+    margin: 0px;
+    margin-top: 25px;
+    background-position-y: -150px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+    /* -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out; */
+    transition: all .3s ease;
+}
+
+/* Hover state - always applicable */
+#button-finland:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    color: #ffffff;
+    font-size: 150px;
+    /* border-radius: 0%; */
+}
+
+/* Active state */
+#button-finland.active-button {
+    color: #ffffff;
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    border-radius: 0%;
+    font-size: 200px;
+    /* Other active state styles */
+}
+
+/* Ensuring hover effect is re-applied correctly */
+#button-finland.active-button:hover {
+    color: #ffffff;
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    font-size: 200px;
+    /* Hover styles that should apply when active */
+}
+
+#submenu-finland{
+    /* text-wrap: balance; */
+    line-height: 2em;
+    background-color: #e0e0e095;
+    color: #000000;
+    margin-top: -18px;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left:0%; /* Adjust this value as needed */
+    text-align:center;
+}
+
+#button-india{
+    background-repeat: no-repeat;
+    background-image: url(../images/india.jpeg);
+    background-size: cover;
+    font-size: 150px;
+    font-weight: bold;
+    color: #2c2c2c;
+    padding: 5px;
+    margin: 0px;
+    margin-top: 25px;
+    background-position-y: -150px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+/* Hover state - always applicable */
+#button-india:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    color: #ffffff;
+    font-size: 150px;
+    /* border-radius: 0%; */
+}
+
+/* Active state */
+#button-india.active-button {
+    color: #ffffff;
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    border-radius: 0%;
+    font-size: 200px;
+    /* Other active state styles */
+}
+
+/* Ensuring hover effect is re-applied correctly */
+#button-india.active-button:hover {
+    color: #ffffff;
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    font-size: 200px;
+    /* Hover styles that should apply when active */
+}
+
+#submenu-india{
+    /* text-wrap: balance; */
+    line-height: 2em;
+    background-color: #e0e0e095;
+    color: #000000;
+    margin-top: -18px;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left:0%; /* Adjust this value as needed */
+    text-align:center;
+}
+
+/* SUBMENU CONTENT!!! */
+
+#submenu-usa, #submenu-finland, #submenu-india {
+    list-style-type: disc; /* This ensures bullet points are shown */
+    list-style-position: inside;
+    padding-right: 4%;
+}
+
+#submenu-usa li, #submenu-finland li, #submenu-india li {
+    display: list-item; /* This ensures the list item displays as a list item */
+    text-align: left; /* Aligns the text to the left */
+    padding-left:6%;
+}
+
+#submenu-usa p, #submenu-finland p, #submenu-india p {
+    /* margin-top: 5px; */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: left; /* Aligns the text to the left */
+    padding-left:6%;
+}
+
+#submenu-usa h1, #submenu-finland h1, #submenu-india h1 {
+    text-align: left; /* Aligns the text to the left */
+    padding-left:2%;
+    font-size: xx-large;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+#submenu-usa h2, #submenu-finland h2, #submenu-india h2 {
+    text-align: left; /* Aligns the text to the left */
+    padding-left:4%;
+    font-size: x-large;
+    color: #3a3a3a;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+/* SUBMENU CONTENT!!! */
+
+#main-footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#main-footer h5{
+    margin:0;
+}
+
+#main-footer p{
+    margin-top: 0;
+    margin-bottom:0;
+}

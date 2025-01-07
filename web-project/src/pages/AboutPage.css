@@ -1,0 +1,63 @@
+/* src/pages/AboutPage.css */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-title {
+  /* margin-bottom: 20px; */
+  text-align: center;
+  color: #881111;
+  padding-bottom: 20px;
+}
+
+.about-subtitle {
+  margin-bottom: 15px;
+  color: #881111;
+}
+
+.about-paragraph {
+  margin-bottom: 15px;
+  line-height: 1.75;
+  color: #000000;
+}
+
+.about-picture {
+  flex: 0 0 400px; /* Adjust the width as needed */
+  margin-top: 75px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.about-picture img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+  margin-bottom: 40px;
+}
+
+.about-list {
+  padding-left: 20px; /* Add padding to the left to indent the list */
+}
+
+.about-list .MuiListItem-root {
+  display: list-item; /* Ensure list items are displayed as list items */
+  list-style-type: disc; /* Use disc bullets */
+  margin-left: 20px; /* Add margin to the left for better spacing */
+}
