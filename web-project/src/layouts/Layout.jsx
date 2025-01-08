@@ -29,7 +29,7 @@ function CustomAppTitle() {
       <Typography
       sx={{ fontWeight: 'bold' }} 
       variant="h4">
-        Rohan's Toolpad
+        Rohan's Sandbox
       </Typography>
     </Stack>
   );
