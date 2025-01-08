@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const REST_API_BASE_URL = 'http://patients-production.up.railway.app/api/patients'
+const REST_API_BASE_URL = 'https://patients-production.up.railway.app/api/patients'
 
 export const listPatients = () => axios.get(REST_API_BASE_URL);
 

@@ -54,6 +54,7 @@
 
 .about-list {
   padding-left: 20px; /* Add padding to the left to indent the list */
+  color:black;
 }
 
 .about-list .MuiListItem-root {
