@@ -20,7 +20,7 @@ export default function AboutPage() {
             Introduction
           </Typography>
           <Typography variant="body1" className="about-paragraph">
-            Hi, I'm Rohan—a passionate and dedicated software developer with a strong foundation in computer science and a keen interest in continuous learning. I recently graduated from the University of Minnesota - Twin Cities with a B.A. in Computer Science and a minor in Leadership. During my academic journey, I honed my problem-solving skills and cultivated a collaborative mindset, which I carry into my professional endeavors.
+            Hi, I'm Rohan—a passionate software developer with a strong foundation in computer science and a commitment to continuous learning. I recently graduated from the University of Minnesota - Twin Cities with a B.A. in Computer Science and a minor in Leadership. During my studies, I developed strong problem-solving skills and a collaborative mindset, which I now bring to every project I undertake. Since graduation, I’ve been actively seeking opportunities to tackle challenging tasks that drive growth and innovation.
           </Typography>
         </section>
         
@@ -90,6 +90,9 @@ export default function AboutPage() {
             </ListItem>
             <ListItem>
               <ListItemText primary="Artificial Intelligence and Machine Learning: AI/ML" />
+            </ListItem>
+            <ListItem>
+              <ListItemText primary="Proficient in Agile and Rapid Application Development (RAD) methodologies" />
             </ListItem>
           </List>
         </section>

@@ -48,3 +48,8 @@
 .project-section ul li {
   margin-bottom: 10px;
 }
+
+.project-image {
+  width: 100%;
+  height: auto;
+}

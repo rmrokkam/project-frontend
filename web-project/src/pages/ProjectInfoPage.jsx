@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import './ProjectInfoPage.css';
+import pms_uml from '../assets/PMS-UML.jpg';
 
 function ProjectInfoPage() {
   const navigator = useNavigate();
@@ -25,6 +26,7 @@ function ProjectInfoPage() {
         <p>
           The reason for creating this application was to practice building a full-fledged CRUD application using modern web technologies. It also serves as a practical example of how to manage state and handle user interactions in a ReactJS application. The backend is built with Java Spring Boot to handle API requests and interact with the MySQL database, ensuring data persistence and integrity.
         </p>
+        <img src={pms_uml} alt="Patient Management System UML Diagram" className="project-image" />
       </section>
       
       <section className="project-section" id="housing-affordability">
