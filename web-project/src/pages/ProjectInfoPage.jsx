@@ -50,7 +50,7 @@ function ProjectInfoPage() {
       </section>
       
       <section className="project-section" id="housing-affordability">
-        <h2 onClick={() => navigate('../housing-affordability')}>
+        <h2 onClick={() => navigator('../other-projects/housing-affordability')}>
             Housing Affordability
         </h2>
         <p>

@@ -5,6 +5,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import HomeWorkIcon from '@mui/icons-material/HomeWork';
 import DescriptionIcon from '@mui/icons-material/Description';
 import ArticleIcon from '@mui/icons-material/Article';
+import FolderIcon from '@mui/icons-material/Folder';
 import AppsIcon from '@mui/icons-material/Apps';
 import { Outlet, Link } from 'react-router-dom';
 import { AppProvider } from '@toolpad/core/react-router-dom';
@@ -39,7 +40,7 @@ const NAVIGATION = [
   {
     segment: 'other-projects',
     title: 'Other Projects',
-    icon: <AppsIcon />,
+    icon: <FolderIcon />,
     children: [
       {
         segment: 'housing-affordability',

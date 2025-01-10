@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import PMSLogoLightMode from '../assets/PMSLogoLightMode.png';
+import PMSLogo from '../assets/PMSLogo.png';
 import OtherProjectsLogo from '../assets/OtherProjectsLogo.png';
 import SudokuLogo from '../assets/SudokuLogo.png';
 import AboutMeLogo from '../assets/AboutMeLogo.png';
@@ -21,10 +21,10 @@ function srcset(image, size, rows = 1, cols = 1) {
 }
 
 export default function DashboardPage() {
-  const navigate = useNavigate();
+  const navigator = useNavigate();
 
   const handleNavigation = (path) => {
-    navigate(path);
+    navigator(path);
   };
 
   return (
@@ -32,7 +32,7 @@ export default function DashboardPage() {
       sx={{ width: 'fit-content', height: '100%'}}
       variant="quilted"
       cols={5}
-      rowHeight={200}
+      rowHeight={154}
     >
       {itemData.map((item) => (
         <ImageListItem
@@ -58,7 +58,14 @@ export default function DashboardPage() {
 
 const itemData = [
   {
-    img: PMSLogoLightMode,
+    img: ProjectInfoLogo,
+    title: 'Project Information',
+    path: '/project-information',
+    rows: 1,
+    cols: 5,
+  },
+  {
+    img: PMSLogo,
     title: 'Patient Management System',
     path: '/pms',
     rows: 1,
@@ -68,7 +75,7 @@ const itemData = [
     img: AboutMeLogo,
     title: 'AboutMe',
     path: '/about-me',
-    rows: 2,
+    rows: 3,
     cols: 2,
   },
   {
@@ -86,18 +93,11 @@ const itemData = [
     cols: 2,
   },
   {
-    img: ProjectInfoLogo,
-    title: 'Project Information',
-    path: '/project-information',
-    rows: 1,
-    cols: 4,
-  },
-  {
     img: OtherProjectsLogo,
     title: 'Other Projects',
     path: '/other-projects',
-    rows: 0.75,
-    cols: 5,
+    rows: 1,
+    cols: 2,
   },
   // Add more items here as needed
 ];
