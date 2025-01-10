@@ -28,9 +28,29 @@ function ProjectInfoPage() {
         </p>
         <img src={pms_uml} alt="Patient Management System UML Diagram" className="project-image" />
       </section>
+
+      <section className="project-section" id="sudoku-genetic-algorithm">
+        <h2 onClick={() => navigator('../sudoku-genetic-algorithm')}>
+            Sudoku Genetic Algorithm
+        </h2>
+        <p>
+          This research paper applies genetic algorithms, a subset of AI &#40;Artifical Intelligence&#41; techniques inspired by natural selection, to efficiently solve Sudoku puzzles. Implemented in Python, it uses evolutionary concepts like selection, crossover, and mutation to optimize solutions.
+        </p>
+        <h5>Key Features:</h5>
+        <ul>
+          <li><b>AI-Powered Solver:</b> Leverages genetic algorithms to mimic evolutionary processes for intelligent problem-solving.</li>
+          <li><b>Efficient Performance:</b> Solves puzzles of varying difficulty with an average time of 0.09 seconds.</li>
+          <li><b>Genetic Approach:</b> Employs tournament selection, two-point crossover, and swap mutation to improve solution quality.</li>
+          <li><b>Optimization:</b> Tuned algorithm parameters to enhance performance across complexities.</li>
+        </ul>
+        <h5>Outcome:</h5>
+        <p>
+          The algorithm outperformed brute-force methods in speed and quality, highlighting the potential of AI-driven optimization for structured problems.
+        </p>
+      </section>
       
       <section className="project-section" id="housing-affordability">
-        <h2 onClick={() => navigator('../housing-affordability')}>
+        <h2 onClick={() => navigate('../housing-affordability')}>
             Housing Affordability
         </h2>
         <p>

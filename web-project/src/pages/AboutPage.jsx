@@ -96,6 +96,17 @@ export default function AboutPage() {
             </ListItem>
           </List>
         </section>
+
+        <section className="about-section">
+          <Typography variant="h5" className="about-subtitle">
+            Contact Information
+          </Typography>
+          <Typography sx={{ lineHeight: 2.2, fontSize: 16}} variant="body1" className="about-paragraph contact-info">
+            <b>Name:</b> Rohan Rokkam<br />
+            <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/rohanrokkam" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/rohanrokkam</a><br />
+            <b>Email:</b> <a href="mailto:rmrokkam@hotmail.com">rmrokkam@hotmail.com</a>
+          </Typography>
+        </section>
       </div>
       
       <div className="about-picture">

@@ -2,16 +2,14 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import IconButton from '@mui/material/IconButton';
-import InfoIcon from '@mui/icons-material/Info';
 import PMSLogoLightMode from '../assets/PMSLogoLightMode.png';
-import PMSLogoDarkMode from '../assets/PMSLogoDarkMode.png';
+import OtherProjectsLogo from '../assets/OtherProjectsLogo.png';
+import SudokuLogo from '../assets/SudokuLogo.png';
 import AboutMeLogo from '../assets/AboutMeLogo.png';
 import HousingLogo from '../assets/HousingLogo.png';
 import ProjectInfoLogo from '../assets/ProjectInfoLogo.png';
 import ResumeLogo from '../assets/ResumeLogo.png';
-import './DashboardPage.css'; // Import the CSS file
+import './Dashboard.css'; // Import the CSS file
 
 function srcset(image, size, rows = 1, cols = 1) {
   return {
@@ -31,7 +29,7 @@ export default function DashboardPage() {
 
   return (
     <ImageList
-      sx={{ width: 'fit-content', height: 'fit-content'}}
+      sx={{ width: 'fit-content', height: '100%'}}
       variant="quilted"
       cols={5}
       rowHeight={200}
@@ -60,20 +58,6 @@ export default function DashboardPage() {
 
 const itemData = [
   {
-    img: ProjectInfoLogo,
-    title: 'Project Information',
-    path: '/project-information',
-    rows: 1,
-    cols: 4,
-  },
-  {
-    img: ResumeLogo,
-    title: 'Resume',
-    path: '/resume',
-    rows: 3,
-    cols: 1,
-  },
-  {
     img: PMSLogoLightMode,
     title: 'Patient Management System',
     path: '/pms',
@@ -88,11 +72,32 @@ const itemData = [
     cols: 2,
   },
   {
-    img: HousingLogo,
-    title: 'Housing Affordability',
-    path: '/housing-affordability',
+    img: ResumeLogo,
+    title: 'Resume',
+    path: '/resume',
+    rows: 3,
+    cols: 1,
+  },
+  {
+    img: SudokuLogo,
+    title: 'Sudoku Genetic Algorithm',
+    path: '/sudoku-genetic-algorithm',
     rows: 1,
     cols: 2,
+  },
+  {
+    img: ProjectInfoLogo,
+    title: 'Project Information',
+    path: '/project-information',
+    rows: 1,
+    cols: 4,
+  },
+  {
+    img: OtherProjectsLogo,
+    title: 'Other Projects',
+    path: '/other-projects',
+    rows: 0.75,
+    cols: 5,
   },
   // Add more items here as needed
 ];

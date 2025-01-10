@@ -62,3 +62,17 @@
   list-style-type: disc; /* Use disc bullets */
   margin-left: 20px; /* Add margin to the left for better spacing */
 }
+
+.contact-info {
+  color: #000000;
+  padding-left: 15px;
+}
+
+.contact-info a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}

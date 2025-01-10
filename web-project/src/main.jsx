@@ -20,6 +20,8 @@ import WorksCitedPage from './pages/Housing/WorksCited.jsx'
 import HousingPage from './pages/Housing/HousingPage';
 import ProjectInfoPage from './pages/ProjectInfoPage';
 import ResumePage from './pages/ResumePage';
+import OtherProjectsPage from './pages/OtherProjectsPage';
+import SudokuPage from './pages/SudokuPage';
 
 const router = createBrowserRouter([
   {
@@ -56,38 +58,48 @@ const router = createBrowserRouter([
             ],
           },
           {
-            path: 'housing-affordability',
-            Component: HousingPage,
+            path: 'sudoku-genetic-algorithm',
+            Component: SudokuPage,
+          },
+          {
+            path: 'other-projects',
+            Component: OtherProjectsPage,
             children: [
               {
-                path: '',
-                Component: IssuePage,
+                path: 'housing-affordability',
+                Component: HousingPage,
+                children: [
+                  {
+                    path: '',
+                    Component: IssuePage,
+                  },
+                  {
+                    path: 'history',
+                    Component: HistoryPage,
+                  },
+                  {
+                    path: 'stakeholders',
+                    Component: StakeholdersPage,
+                  },
+                  {
+                    path: 'grassroots',
+                    Component: GrassrootsPage,
+                  },
+                  {
+                    path: 'systems-map',
+                    Component: SystemsMapPage,
+                  },
+                  {
+                    path: 'summary',
+                    Component: SummaryPage,
+                  },
+                  {
+                    path: 'works-cited',
+                    Component: WorksCitedPage,
+                  },
+                ],
               },
-              {
-                path: 'history',
-                Component: HistoryPage,
-              },
-              {
-                path: 'stakeholders',
-                Component: StakeholdersPage,
-              },
-              {
-                path: 'grassroots',
-                Component: GrassrootsPage,
-              },
-              {
-                path: 'systems-map',
-                Component: SystemsMapPage,
-              },
-              {
-                path: 'summary',
-                Component: SummaryPage,
-              },
-              {
-                path: 'works-cited',
-                Component: WorksCitedPage,
-              },
-            ],
+            ]
           },
           {
             path: 'resume',
