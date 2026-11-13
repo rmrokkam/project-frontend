@@ -1,0 +1,16 @@
+.DS_Store
+
+# Sibling project directories not part of this repo's tracked content
+/ai-business/
+/css_practice/
+/fantasy-ai/
+/fantasy-football-ai/
+/html_practice/
+/java/
+/lead-with-code/
+/netflix-demo/
+/portfolio-updated/
+/python-refresher/
+/runtime-EclipseApplication/
+/sand/
+/workspace/

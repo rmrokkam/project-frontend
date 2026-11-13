@@ -1,0 +1,234 @@
+/* Scoped to the Wedding page only — deliberately independent of the
+   portfolio's MUI/Bootstrap styling. Palette pulled from the invite
+   graphic (maroon / gold / cream) rather than the dashboard theme. */
+
+.rw-page {
+  --rw-maroon: #7a1f2b;
+  --rw-maroon-dark: #591420;
+  --rw-gold: #b5892b;
+  --rw-cream: #fbf3e3;
+  --rw-cream-dark: #f2e6cc;
+  --rw-ink: #3a2a1c;
+
+  /* The shared app shell (AppProvider) sets html/body to overflow:hidden
+     globally for its own dashboard layout's internal scroll areas. We don't
+     use that shell here, so this page needs its own scroll container rather
+     than relying on document-level scrolling, which is blocked. */
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  background: var(--rw-cream);
+  color: var(--rw-ink);
+  /* Georgia has no Telugu/Devanagari glyphs; the system sans-serif fallbacks
+     cover those scripts on every major OS, so Latin text still renders serif
+     while Telugu/Hindi text falls through to a script that actually has them. */
+  font-family: Georgia, 'Times New Roman', 'Noto Sans Telugu', 'Noto Sans Devanagari', serif;
+  padding: 0 0 4rem;
+  box-sizing: border-box;
+}
+
+.rw-lang-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.rw-lang-btn {
+  font-family: inherit;
+  font-size: 0.8rem;
+  background: transparent;
+  color: var(--rw-cream);
+  border: 1px solid rgba(251, 243, 227, 0.4);
+  border-radius: 999px;
+  padding: 0.3rem 0.85rem;
+  cursor: pointer;
+}
+
+.rw-lang-btn-active {
+  background: var(--rw-cream);
+  color: var(--rw-maroon-dark);
+  border-color: var(--rw-cream);
+  font-weight: bold;
+}
+
+.rw-page *,
+.rw-page *::before,
+.rw-page *::after {
+  box-sizing: inherit;
+}
+
+.rw-hero {
+  background: linear-gradient(180deg, var(--rw-maroon) 0%, var(--rw-maroon-dark) 100%);
+  color: var(--rw-cream);
+  text-align: center;
+  padding: 3.5rem 1.5rem 2.75rem;
+}
+
+.rw-hero-eyebrow {
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--rw-gold);
+}
+
+.rw-hero-title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.75rem, 5vw, 2.75rem);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.rw-hero-subtitle {
+  margin: 0 0 0.25rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: var(--rw-gold);
+}
+
+.rw-hero-dates {
+  margin: 0 0 1.75rem;
+  font-size: 1.1rem;
+}
+
+.rw-btn {
+  font-family: inherit;
+  font-size: 0.95rem;
+  border-radius: 999px;
+  padding: 0.65rem 1.5rem;
+  cursor: pointer;
+  border: 1px solid var(--rw-gold);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.rw-btn:hover {
+  transform: translateY(-1px);
+}
+
+.rw-btn-primary {
+  background: var(--rw-gold);
+  color: var(--rw-maroon-dark);
+  font-weight: bold;
+}
+
+.rw-btn-primary:hover {
+  background: #c79c3f;
+}
+
+.rw-btn-ghost {
+  background: transparent;
+  color: var(--rw-maroon);
+  border-color: var(--rw-maroon);
+  font-size: 0.8rem;
+  padding: 0.4rem 0.9rem;
+  white-space: nowrap;
+}
+
+.rw-btn-ghost:hover {
+  background: var(--rw-maroon);
+  color: var(--rw-cream);
+}
+
+.rw-schedule {
+  max-width: 880px;
+  margin: 2.5rem auto 0;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.rw-day-card {
+  background: #fff;
+  border: 1px solid var(--rw-cream-dark);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(122, 31, 43, 0.08);
+}
+
+.rw-day-header {
+  background: var(--rw-cream-dark);
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.6rem;
+}
+
+.rw-day-label {
+  font-weight: bold;
+  color: var(--rw-maroon);
+  font-size: 1.1rem;
+}
+
+.rw-day-date {
+  color: var(--rw-ink);
+  opacity: 0.75;
+  font-size: 0.95rem;
+}
+
+.rw-event-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rw-event-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.25rem;
+  border-top: 1px solid var(--rw-cream-dark);
+}
+
+.rw-event-row:first-child {
+  border-top: none;
+}
+
+.rw-event-time {
+  flex: 0 0 150px;
+  font-size: 0.9rem;
+  color: var(--rw-maroon);
+  font-weight: bold;
+}
+
+.rw-event-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.rw-event-title {
+  font-size: 1.05rem;
+}
+
+.rw-event-venue {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.rw-event-directions {
+  color: var(--rw-maroon);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 560px) {
+  .rw-event-row {
+    flex-wrap: wrap;
+  }
+
+  .rw-event-time {
+    flex: 1 1 100%;
+  }
+
+  .rw-btn-ghost {
+    flex: 1 1 100%;
+  }
+}
