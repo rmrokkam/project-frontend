@@ -22,8 +22,6 @@ import ProjectInfoPage from './pages/ProjectInfoPage';
 import ResumePage from './pages/ResumePage';
 import OtherProjectsPage from './pages/OtherProjectsPage';
 import SudokuPage from './pages/SudokuPage';
-import OjaswiniPage from './pages/OjaswiniPage';
-import OjaswiniAcceptsPage from './pages/OjaswiniAcceptsPage';
 
 const router = createBrowserRouter([
   {
@@ -112,14 +110,6 @@ const router = createBrowserRouter([
             Component: AboutPage,
           },
         ],
-      },
-      {
-        path: 'ojaswini',
-        Component: OjaswiniPage,
-      },
-      {
-        path: 'ojaswini/accepts',
-        Component: OjaswiniAcceptsPage,
       },
     ],
   },
