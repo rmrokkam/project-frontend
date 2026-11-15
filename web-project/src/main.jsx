@@ -22,16 +22,11 @@ import ProjectInfoPage from './pages/ProjectInfoPage';
 import ResumePage from './pages/ResumePage';
 import OtherProjectsPage from './pages/OtherProjectsPage';
 import SudokuPage from './pages/SudokuPage';
-import WeddingPage from './pages/Wedding/WeddingPage';
 
 const router = createBrowserRouter([
   {
     Component: App,
     children: [
-      {
-        path: 'wedding',
-        Component: WeddingPage,
-      },
       {
         path: '/',
         Component: Layout,
